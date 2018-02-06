@@ -1,10 +1,29 @@
 package coinfactory;
 
-public class Tx {
-	private String address;
+public  class Tx extends TxAbstract {
 	
-	Tx(String address){
-		this.address = address;
+	private String sender;
+	private String sendee;
+	private float value;
+	Tx(String sender,String sendee, float value){
+		this.sender = sender;
+		this.sendee = sendee;
+		this.value = value;
+	}
+	@Override
+	protected void checkSender() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	protected void checkSendee() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	protected void checkValue() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 
